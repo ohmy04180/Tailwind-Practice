@@ -977,6 +977,21 @@ video {
   padding-right: 0.25rem;
 }
 
+.button {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 0.125rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.box.button{
+  gap: 8px;
+}
+
 .hover\:text-blue-500:hover {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));

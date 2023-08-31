@@ -17,3 +17,7 @@
 .badge--sm{
   @apply py-0 px-1;
 }
+
+.button{
+  @apply flex items-start justify-center rounded-sm py-1 px-2;
+}
