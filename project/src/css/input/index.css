@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.box.flex{
+  gap: 8px;
+}
+
+.badge{
+  @apply rounded-sm py-1 px-2 text-gray-900 select-none;
+}
+
+.badge--lg{
+  @apply py-2 px-4;
+}
+
+.badge--sm{
+  @apply py-0 px-1;
+}
