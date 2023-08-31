@@ -10,14 +10,14 @@
   @apply rounded-sm py-1 px-2 text-gray-900 select-none;
 }
 
-.badge--lg{
-  @apply py-2 px-4;
-}
-
-.badge--sm{
-  @apply py-0 px-1;
-}
-
 .button{
-  @apply flex items-start justify-center rounded-sm py-1 px-2;
+  @apply flex items-start justify-center rounded-sm py-1 px-2 text-white;
+}
+
+.badge--lg, .button--lg{
+  @apply py-2 px-4 text-lg;
+}
+
+.badge--sm, .button--sm{
+  @apply py-0 px-1 text-xs;
 }
