@@ -7,17 +7,21 @@
 }
 
 .badge{
-  @apply rounded-sm py-1 px-2 text-gray-900 select-none;
+  @apply rounded-sm h-8 py-1 px-2 text-gray-900 select-none;
 }
 
 .button{
-  @apply flex items-start justify-center rounded-sm py-1 px-2 text-white;
+  @apply flex items-start justify-center rounded-sm py-1 px-2 h-8 text-white;
 }
 
-.badge--lg, .button--lg{
-  @apply py-2 px-4 text-lg;
+.text-input{
+  @apply w-full h-8 py-1 px-2 rounded-sm border border-gray-400 text-gray-900;
 }
 
-.badge--sm, .button--sm{
-  @apply py-0 px-1 text-xs;
+.badge--lg, .button--lg, .text-input--lg{
+  @apply py-2 px-4 text-lg h-10;
+}
+
+.badge--sm, .button--sm, .text-input--sm{
+  @apply py-0 px-1 text-xs h-6;
 }
