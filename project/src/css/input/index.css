@@ -2,26 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-.box.flex{
-  gap: 8px;
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
 }
 
-.badge{
-  @apply rounded-sm h-8 py-1 px-2 text-gray-900 select-none;
+@layer components {
+  .badge {
+    @apply flex items-center justify-center rounded-sm h-8 py-1 px-2 text-gray-900 select-none;
+  }
+
+  .button {
+    @apply flex items-center justify-center rounded-sm py-1 px-2 h-8 text-white;
+  }
+
+  .text-input {
+    @apply w-full h-8 py-1 px-2 rounded-sm border border-gray-400 text-gray-900;
+  }
+
+  .badge.badge--lg,
+  .button.button--lg,
+  .text-input.text-input--lg {
+    @apply py-2 px-4 text-lg h-10;
+  }
+
+  .badge.badge--sm,
+  .button.button--sm,
+  .text-input.text-input--sm {
+    @apply py-0 px-1 text-xs h-6;
+  }
 }
 
-.button{
-  @apply flex items-start justify-center rounded-sm py-1 px-2 h-8 text-white;
-}
-
-.text-input{
-  @apply w-full h-8 py-1 px-2 rounded-sm border border-gray-400 text-gray-900;
-}
-
-.badge--lg, .button--lg, .text-input--lg{
-  @apply py-2 px-4 text-lg h-10;
-}
-
-.badge--sm, .button--sm, .text-input--sm{
-  @apply py-0 px-1 text-xs h-6;
+@layer utilities {
+  .filter-none {
+    filter: none;
+  }
+  .filter-grayscale {
+    filter: grayscale(100%);
+  }
 }
