@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Tailwind Practice">
   <title>Tailwind CSS Practice</title>
-  <link href="./css/output.css" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
 </head>
 
 <body>
@@ -396,7 +396,6 @@
           </div>
         </div>
         <div class="page" id="page--modal">
-          <!-- modal -->
           <div class="pt-16 pb-12 bg-[#DFEEFF] border-b border-blue-600 pl-20">
             <strong class="text-[16px] font-normal">Component</strong>
             <h3 class="text-[36px] font-bold italic text-[#102B76]">Modal</h3>
@@ -438,7 +437,6 @@
 
         </div>
         <div class="page" id="page--information">
-          <!-- modal -->
           <div class="pt-16 pb-12 bg-[#DFEEFF] border-b border-blue-600 pl-20">
             <strong class="text-[16px] font-normal">Component</strong>
             <h3 class="text-[36px] font-bold italic text-[#102B76]">Information</h3>
@@ -516,7 +514,6 @@
           </div>
         </div>
         <div class="page" id="page--sign-in">
-          <!-- modal -->
           <div class="pt-16 pb-12 bg-[#DFEEFF] border-b border-blue-600 pl-20">
             <strong class="text-[16px] font-normal">Component</strong>
             <h3 class="text-[36px] font-bold italic text-[#102B76]">Sign-in and Registration</h3>
@@ -568,7 +565,6 @@
           </div>
         </div>
         <div class="page" id="page--nav">
-          <!-- modal -->
           <div class="pt-16 pb-12 bg-[#DFEEFF] border-b border-blue-600 pl-20">
             <strong class="text-[16px] font-normal">Component</strong>
             <h3 class="text-[36px] font-bold italic text-[#102B76]">Navbars</h3>
@@ -673,7 +669,6 @@
           </div>
         </div>
         <div class="page" id="page--list">
-          <!-- modal -->
           <div class="pt-16 pb-12 bg-[#DFEEFF] border-b border-blue-600 pl-20">
             <strong class="text-[16px] font-normal">Component</strong>
             <h3 class="text-[36px] font-bold italic text-[#102B76]">Product List</h3>
@@ -728,32 +723,32 @@
 
         <!-- sample -->
         <div class="page" id="page--sample">
-          <!-- modal -->
           <div class="pt-16 pb-12 bg-[#DFEEFF] border-b border-blue-600 pl-20">
             <strong class="text-[16px] font-normal">Component</strong>
-            <h3 class="text-[36px] font-bold italic text-[#102B76]">Modal</h3>
+            <h3 class="text-[36px] font-bold italic text-[#102B76]">Form</h3>
           </div>
           <div class="pl-20 pt-24 pb-24">
             <span class="inline-block pt-8 border-t-2 border-blue-500 text-xl pb-12">Default</span>
             <div class="pr-60">
               <div class=" border rounded-md p-6 flex items-center justify-center flex-col gap-2">
-                <nav className="flex sm:justify-center space-x-4">
-                  {[
-                  ['Home', '/dashboard'],
-                  ['Team', '/team'],
-                  ['Projects', '/projects'],
-                  ['Reports', '/reports'],
-                  ].map(([title, url]) => (
-                  <a href={url} className="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900">{title}</a>
-                  ))}
-                </nav>
+                <form>
+                  <label class="block">
+                    <span class="block text-sm font-medium text-slate-700">Username</span>
+                    <!-- Using form state modifiers, the classes can be identical for every input -->
+                    <input type="text" value="tbone" class="mt-1 block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+                      focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+                      disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+                      invalid:border-pink-500 invalid:text-pink-600
+                      focus:invalid:border-pink-500 focus:invalid:ring-pink-500
+                    " />
+                  </label>
+                </form>
               </div>
             </div>
           </div>
         </div>
         <!-- sample -->
         <div class="page" id="page--sample">
-          <!-- modal -->
           <div class="pt-16 pb-12 bg-[#DFEEFF] border-b border-blue-600 pl-20">
             <strong class="text-[16px] font-normal">Component</strong>
             <h3 class="text-[36px] font-bold italic text-[#102B76]">Modal</h3>
@@ -769,7 +764,6 @@
         </div>
         <!-- sample -->
         <div class="page" id="page--sample">
-          <!-- modal -->
           <div class="pt-16 pb-12 bg-[#DFEEFF] border-b border-blue-600 pl-20">
             <strong class="text-[16px] font-normal">Component</strong>
             <h3 class="text-[36px] font-bold italic text-[#102B76]">Modal</h3>
