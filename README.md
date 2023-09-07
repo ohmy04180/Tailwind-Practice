@@ -33,7 +33,7 @@ module.exports = {
 ### 4. terminal 에서 실행
 
 ```bash
-npx tailwindcss -i ./src/css/input/index.css -o ./src/css/output.css --watch
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
 ```
 
 ### 5. link요소로 css 임포트, html 작성

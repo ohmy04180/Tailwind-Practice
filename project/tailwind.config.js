@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./src/*.{html,js}"],
+  content: ["./dist/*.{html,js}"],
   theme: {
     screens: {
       sm: "480px",
