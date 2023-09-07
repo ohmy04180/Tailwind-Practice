@@ -5,7 +5,7 @@
 ### 1. terminal 에서 설치
 
 ```bash
-npm install -D tailwindcss postcss autoprefixer
+npm install -D tailwindcss
 npx tailwindcss init
 ```
 
@@ -14,7 +14,7 @@ npx tailwindcss init
 ```bash
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./dist/*.{html,js}"],
   theme: {
     extend: {},
   },
